@@ -383,52 +383,24 @@
   <div class="container">
     <h2>Cross Architecture</h2>
     <p style="font-size:14px; color:var(--text-dim); margin-bottom:16px;">
-      PACE's temporal-role decomposition transfers across policy backbones. We integrate the same Phase/Event/Pred. roles into Diffusion Policy and compare with ACT+PACE on <strong>three different target positions tested in sequence</strong> in the same two-pin plug insertion task. DP+PACE reaches 88.3% average success, confirming that temporal-role organization is not backbone-specific. Each row shows one trial; columns compare backbones under identical conditions.
+      PACE's temporal-role decomposition transfers across policy backbones. We integrate the same Phase/Event/Pred. roles into Diffusion Policy and evaluate on <strong>three different target positions tested in sequence</strong> in the two-pin plug insertion task. DP+PACE reaches 88.3% average success, confirming that temporal-role organization is not backbone-specific.
     </p>
 
-    <!-- Column headers -->
-    <div style="display:grid; grid-template-columns: auto 1fr 1fr; gap:16px; margin-bottom:4px;">
-      <span></span>
-      <p style="text-align:center; font-size:13px; font-weight:600; color:var(--text); margin:0;">ACT + PACE</p>
-      <p style="text-align:center; font-size:13px; font-weight:600; color:var(--text); margin:0;">Diffusion Policy + PACE</p>
-    </div>
-
-    <!-- Trial 1 -->
-    <div style="display:grid; grid-template-columns: auto 1fr 1fr; gap:16px; align-items:center; margin-bottom:16px;">
-      <span style="font-size:12px; font-weight:600; color:var(--text-dim); white-space:nowrap;">Trial 1</span>
-      <div class="video-card">
-        <div class="placeholder" style="min-height:160px;">[ ACT+PACE, pos 1 ]<br><small>static/videos/arch_t1_act.mp4</small></div>
-        <!-- <video autoplay muted loop playsinline loading="lazy" controlsList="nodownload" oncontextmenu="return false;"><source src="static/videos/arch_t1_act.mp4" type="video/mp4"></video> -->
-      </div>
+    <div style="display:grid; grid-template-columns: 1fr 1fr 1fr; gap:16px;">
       <div class="video-card">
         <div class="placeholder" style="min-height:160px;">[ DP+PACE, pos 1 ]<br><small>static/videos/arch_t1_dp.mp4</small></div>
         <!-- <video autoplay muted loop playsinline loading="lazy" controlsList="nodownload" oncontextmenu="return false;"><source src="static/videos/arch_t1_dp.mp4" type="video/mp4"></video> -->
-      </div>
-    </div>
-
-    <!-- Trial 2 -->
-    <div style="display:grid; grid-template-columns: auto 1fr 1fr; gap:16px; align-items:center; margin-bottom:16px;">
-      <span style="font-size:12px; font-weight:600; color:var(--text-dim); white-space:nowrap;">Trial 2</span>
-      <div class="video-card">
-        <div class="placeholder" style="min-height:160px;">[ ACT+PACE, pos 2 ]<br><small>static/videos/arch_t2_act.mp4</small></div>
-        <!-- <video autoplay muted loop playsinline loading="lazy" controlsList="nodownload" oncontextmenu="return false;"><source src="static/videos/arch_t2_act.mp4" type="video/mp4"></video> -->
+        <div class="caption">Trial 1</div>
       </div>
       <div class="video-card">
         <div class="placeholder" style="min-height:160px;">[ DP+PACE, pos 2 ]<br><small>static/videos/arch_t2_dp.mp4</small></div>
         <!-- <video autoplay muted loop playsinline loading="lazy" controlsList="nodownload" oncontextmenu="return false;"><source src="static/videos/arch_t2_dp.mp4" type="video/mp4"></video> -->
-      </div>
-    </div>
-
-    <!-- Trial 3 -->
-    <div style="display:grid; grid-template-columns: auto 1fr 1fr; gap:16px; align-items:center; margin-bottom:16px;">
-      <span style="font-size:12px; font-weight:600; color:var(--text-dim); white-space:nowrap;">Trial 3</span>
-      <div class="video-card">
-        <div class="placeholder" style="min-height:160px;">[ ACT+PACE, pos 3 ]<br><small>static/videos/arch_t3_act.mp4</small></div>
-        <!-- <video autoplay muted loop playsinline loading="lazy" controlsList="nodownload" oncontextmenu="return false;"><source src="static/videos/arch_t3_act.mp4" type="video/mp4"></video> -->
+        <div class="caption">Trial 2</div>
       </div>
       <div class="video-card">
         <div class="placeholder" style="min-height:160px;">[ DP+PACE, pos 3 ]<br><small>static/videos/arch_t3_dp.mp4</small></div>
         <!-- <video autoplay muted loop playsinline loading="lazy" controlsList="nodownload" oncontextmenu="return false;"><source src="static/videos/arch_t3_dp.mp4" type="video/mp4"></video> -->
+        <div class="caption">Trial 3</div>
       </div>
     </div>
 
