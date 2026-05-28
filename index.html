@@ -322,7 +322,7 @@
   <div class="container">
     <h2>Cross Signal Source</h2>
     <p style="font-size:14px; color:var(--text-dim); margin-bottom:16px;">
-      PACE's temporal-role decomposition generalizes across different physical feedback signals. We evaluate all three signal sources &mdash; GF225 tactile force, end-effector six-axis force/torque, and joint currents &mdash; on <strong>three different target positions tested in sequence</strong> in the same two-pin plug insertion task, demonstrating that PACE does not depend on a specific tactile sensor. Each row shows one trial at a different position; columns compare signal sources under identical conditions.
+      In the paper, we use GF225 tactile force as the default feedback signal and evaluate end-effector six-axis force/torque and joint currents as alternative signal sources on 2-pin and Key insertion tasks. The videos below show representative 2-pin rollouts at different target positions to visualize cross-signal transfer.
     </p>
 
     <!-- Column headers (aligned with 4-col grid: auto + 1fr 1fr 1fr) -->
@@ -383,7 +383,7 @@
   <div class="container">
     <h2>Cross Architecture</h2>
     <p style="font-size:14px; color:var(--text-dim); margin-bottom:16px;">
-      PACE's temporal-role decomposition transfers across policy backbones. We integrate the same Phase/Event/Pred. roles into Diffusion Policy and evaluate on <strong>three different target positions tested in sequence</strong> in the two-pin plug insertion task. DP+PACE reaches 88.3% average success, confirming that temporal-role organization is not backbone-specific.
+      In the paper, we integrate PACE into Diffusion Policy and evaluate DP+PACE on both 2-pin and Key insertion tasks. The videos below show representative 2-pin rollouts to visualize cross-backbone transfer.
     </p>
 
     <div style="display:grid; grid-template-columns: 1fr 1fr 1fr; gap:16px;">
