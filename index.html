@@ -234,7 +234,7 @@
   <div class="container">
     <h2>PACE for Real Insertion Tasks</h2>
     <p style="font-size:14px; color:var(--text-dim); margin-bottom:16px;">
-      Five real insertion tasks covering non-axisymmetric orientation constraints, local visual invisibility, multi-point contact, small-clearance pose sensitivity, and sustained contact progress. All videos at 1&times; speed, 20 Hz closed-loop control.
+      Five real insertion tasks covering orientation constraints, hidden pins, multi-point contact, small-clearance sensitivity, and sustained-force insertion. All videos at 1&times; speed, 20 Hz closed-loop control.
     </p>
 
     <!-- Row 1: 2 videos -->
@@ -322,7 +322,7 @@
   <div class="container">
     <h2>Cross Signal Source</h2>
     <p style="font-size:14px; color:var(--text-dim); margin-bottom:16px;">
-      In the paper, we use GF225 tactile force as the default feedback signal and evaluate end-effector six-axis force/torque and joint currents as alternative signal sources on 2-pin and Key insertion tasks. The videos below show representative 2-pin rollouts at different target positions to visualize cross-signal transfer.
+      This experiment tests cross-signal generality by replacing the default GF225 tactile-force signal with end-effector six-axis force/torque or joint currents, and evaluating on 2-pin and Key. Both alternatives remain close to the tactile default (93.3%), reaching 90.0% and 88.3%, indicating that PACE is not limited to the default tactile sensor. The videos below show representative 2-pin rollouts at three different target positions tested in sequence.
     </p>
 
     <!-- Column headers (aligned with 4-col grid: auto + 1fr 1fr 1fr) -->
@@ -383,7 +383,7 @@
   <div class="container">
     <h2>Cross Architecture</h2>
     <p style="font-size:14px; color:var(--text-dim); margin-bottom:16px;">
-      We integrate PACE into Diffusion Policy and evaluate DP+PACE on 2-pin and Key insertion tasks. DP+PACE achieves 88.3% average success, a 70.0 pp improvement over vanilla DP, confirming that PACE's temporal-role organization transfers across policy backbones. The videos below show representative 2-pin rollouts.
+      This experiment tests whether PACE is specific to ACT by integrating the same Phase/Event/Pred. roles into Diffusion Policy and evaluating on 2-pin and Key. DP+PACE reaches 88.3% average success, a 70.0 pp improvement over vanilla DP, indicating that PACE's temporal-role organization remains effective across different policy backbones. The videos below show representative 2-pin rollouts at three different target positions tested in sequence.
     </p>
 
     <div style="display:grid; grid-template-columns: 1fr 1fr 1fr; gap:16px;">
