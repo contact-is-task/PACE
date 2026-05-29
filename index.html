@@ -145,7 +145,7 @@
       We present <strong>PACE</strong> (Phase-Aware Contact-Event Conditioning), a temporal-role tactile conditioning framework for chunk-based insertion policies. PACE organizes a shared tactile stream into three temporal roles: persistent contact states condition action-chunk generation, abrupt contact events correct the generated chunk, and contact-consequence prediction shapes action representations during training. This design preserves chunk-level action continuity while assigning distinct pathways to different temporal roles of contact feedback.
     </p>
     <p class="abstract-text">
-      Across five real-robot insertion tasks, PACE achieves an average success rate of <strong>90.7%</strong>, outperforming vision-only and visuotactile fusion baselines by over 44 percentage points; on the ManipulationNet benchmark, PACE maintains <strong>88.7%</strong> success across six geometry-clearance configurations, including an industrial-grade 0.1-mm clearance. Ablations confirm the complementary contributions of the three temporal roles, mechanistic analyses show that PACE separates normal insertion progress from contact events requiring immediate correction, and cross-signal and cross-architecture experiments indicate that this temporal-role principle extends across different tactile signals and policy backbones.
+      Across five real-robot insertion tasks, PACE achieves an average success rate of <strong>90.7%</strong>, outperforming vision-only and visuotactile fusion baselines by over 44 percentage points; on the ManipulationNet benchmark, PACE maintains <strong>88.7%</strong> success across six geometry-clearance configurations, including an industrial-grade 0.1-mm clearance. Ablations confirm the complementary contributions of the three temporal roles, mechanistic analyses show that PACE separates normal insertion progress from contact events requiring immediate correction, and cross-signal and cross-architecture experiments indicate that this temporal-role principle extends across different physical feedback signals and policy backbones.
     </p>
   </div>
 </section>
@@ -170,7 +170,7 @@
   <div class="container">
     <h2>Data Collection System</h2>
     <p style="font-size:14px; color:var(--text-dim); margin-bottom:16px;">
-      Demonstrations are collected using a Force Dimension Sigma7 force-feedback device teleoperating a Realman RM75 robot arm. The operator directly feels the direction and magnitude of contact forces, producing demonstrations with natural contact-responsive behaviors (collision retreat, search micro-adjustment, stable insertion). Each task contains ~160 demonstration trajectories at 20 Hz.
+      We built a custom force-feedback teleoperation system around the Sigma7 haptic device that renders calibrated end-effector contact wrench to the operator in real time, producing demonstrations with natural contact-responsive behaviors (collision retreat, search micro-adjustment, stable insertion). Each task contains ~160 demonstration trajectories at 20 Hz.
     </p>
 
     <p style="font-size:13px; color:var(--text-dim); margin-bottom:12px;">
@@ -383,7 +383,7 @@
   <div class="container">
     <h2>Cross Architecture</h2>
     <p style="font-size:14px; color:var(--text-dim); margin-bottom:16px;">
-      In the paper, we integrate PACE into Diffusion Policy and evaluate DP+PACE on both 2-pin and Key insertion tasks. The videos below show representative 2-pin rollouts to visualize cross-backbone transfer.
+      We integrate PACE into Diffusion Policy and evaluate DP+PACE on 2-pin and Key insertion tasks. DP+PACE achieves 88.3% average success, a 70.0 pp improvement over vanilla DP, confirming that PACE's temporal-role organization transfers across policy backbones. The videos below show representative 2-pin rollouts.
     </p>
 
     <div style="display:grid; grid-template-columns: 1fr 1fr 1fr; gap:16px;">
