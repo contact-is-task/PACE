@@ -139,7 +139,7 @@
   <div class="container">
     <h2>Abstract</h2>
     <p class="abstract-text">
-      Contact-rich insertion requires robots to combine visual alignment with tactile adjustment. However, existing visuotactile chunk-based policies collapse tactile feedback into a single generation-time fusion pathway, leaving persistent contact states, abrupt contact events, and future contact consequences to be implicitly modeled within one representation.
+      Contact-rich insertion requires robots to combine visual alignment with tactile adjustment. However, existing visuotactile chunk-based policies collapse tactile feedback into a single generation-time fusion pathway, leaving persistent contact states, abrupt contact events, and future contact consequences implicitly modeled in a single representation.
     </p>
     <p class="abstract-text">
       We present <strong>PACE</strong> (Phase-Aware Contact-Event Conditioning), a temporal-role tactile conditioning framework for chunk-based insertion policies. PACE organizes a shared tactile stream into three temporal roles: persistent contact states condition action-chunk generation, abrupt contact events correct the generated chunk, and contact-consequence prediction shapes action representations during training. This design preserves chunk-level action continuity while assigning distinct pathways to different temporal roles of contact feedback.
@@ -170,7 +170,7 @@
   <div class="container">
     <h2>Data Collection System</h2>
     <p style="font-size:14px; color:var(--text-dim); margin-bottom:16px;">
-      We built a custom force-feedback teleoperation system around the sigma.7 haptic device that renders calibrated end-effector contact wrench to the operator in real time, producing demonstrations with natural contact-responsive behaviors (collision retreat, search micro-adjustment, stable insertion). Each task contains ~160 demonstration trajectories at 20 Hz.
+      We built a custom force-feedback teleoperation system around the Force Dimension sigma.7 haptic device that renders calibrated contact wrench to the operator in real time, producing demonstrations with natural contact-responsive behaviors (collision retreat, search adjustment, stable insertion). Each task has about 160 demonstrations of roughly 300 steps at 20 Hz.
     </p>
 
     <p style="font-size:13px; color:var(--text-dim); margin-bottom:12px;">
